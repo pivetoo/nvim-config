@@ -7,7 +7,7 @@ return {
       -- Abre o Claude sempre no raiz do monorepo (por causa do CLAUDE.md / .playbook),
       -- independente de onde o arquivo atual esta.
       terminal = {
-        cwd = vim.fn.expand("~/projetos/web-projects"),
+        cwd = vim.fn.expand("~/dev/web-projects"),
       },
     },
     cmd = {
