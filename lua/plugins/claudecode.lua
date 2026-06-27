@@ -3,7 +3,13 @@ return {
   {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
-    config = true,
+    opts = {
+      -- Abre o Claude sempre no raiz do monorepo (por causa do CLAUDE.md / .playbook),
+      -- independente de onde o arquivo atual esta.
+      terminal = {
+        cwd = vim.fn.expand("~/projetos/web-projects"),
+      },
+    },
     cmd = {
       "ClaudeCode",
       "ClaudeCodeFocus",
