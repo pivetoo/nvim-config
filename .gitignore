@@ -1,0 +1,7 @@
+# Arquivos de swap/estado do Neovim
+*.swp
+*.swo
+*~
+
+# Plugins instalados ficam em ~/.local/share/nvim (fora deste repo).
+# O lazy-lock.json (pin de versoes) E versionado de proposito.
